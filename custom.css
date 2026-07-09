@@ -1,18 +1,35 @@
-/* Put the image ONLY where the Duke blue area was */
-header > .container {
+/* Put the image behind the whole top header area */
+header {
     background:
         linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
         url("files/2025/12/header.jpg") center center / cover no-repeat !important;
 }
 
-/* Leave the navigation exactly white */
+/* Make the top container transparent so the image fills the full blue area */
+header > .container {
+    background: transparent !important;
+}
+
+/* Keep the navigation bar white */
 .menu-container,
+#site-header-menu,
+.menu-container nav,
 #primary-menu {
     background: white !important;
 }
 
-/* White title text */
-header > .container,
+/* Name stays white on the image */
 header > .container a {
     color: white !important;
+}
+
+/* Navigation links stay navy */
+#primary-menu a {
+    color: #012169 !important;
+}
+
+/* Keep active/hover item visible */
+#primary-menu .current-menu-item > a,
+#primary-menu li:hover > a {
+    color: #012169 !important;
 }
