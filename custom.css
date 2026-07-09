@@ -1,26 +1,22 @@
 header {
     background-image:
         linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("files/2025/12/header.jpg") !important;
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        url("files/header.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 }
 
-header,
-header a {
-    color: white !important;
+/* reduce header height */
+header > .container {
+    padding-top: 0.5rem !important;
 }
 
-header .container {
-    padding-top: 0.75rem !important;
+header .mb-4 {
+    margin-bottom: 0.5rem !important;
 }
 
-.menu-container {
-    background: rgba(0,0,0,0.25);
-}
-
-.menu-container a {
-    color: white !important;
+/* keep nav compact */
+.menu-container nav {
+    margin-top: 0.5rem !important;
 }
