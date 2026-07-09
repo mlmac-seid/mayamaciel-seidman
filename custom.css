@@ -1,35 +1,29 @@
-/* Put the image behind the whole top header area */
+/* Picture area above nav */
 header {
     background:
         linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
         url("files/2025/12/header.jpg") center center / cover no-repeat !important;
 }
 
-/* Make the top container transparent so the image fills the full blue area */
-header > .container {
-    background: transparent !important;
-}
-
-/* Keep the navigation bar white */
+/* White nav bar */
 .menu-container,
 #site-header-menu,
-.menu-container nav,
-#primary-menu {
+#primary-menu,
+#primary-menu ul {
     background: white !important;
 }
 
-/* Name stays white on the image */
-header > .container a {
-    color: white !important;
+/* Remove Duke theme gap above nav */
+.menu-container nav {
+    margin-top: 0 !important;
 }
 
-/* Navigation links stay navy */
+/* Keep nav links navy */
 #primary-menu a {
     color: #012169 !important;
 }
 
-/* Keep active/hover item visible */
-#primary-menu .current-menu-item > a,
-#primary-menu li:hover > a {
-    color: #012169 !important;
+/* Keep name white */
+header > .container > a {
+    color: white !important;
 }
