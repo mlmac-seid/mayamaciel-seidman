@@ -13,6 +13,10 @@ header a {
     color: white !important;
 }
 
+header .container {
+    padding-top: 0.75rem !important;
+}
+
 .menu-container {
     background: rgba(0,0,0,0.25);
 }
