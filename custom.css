@@ -1,38 +1,22 @@
- /* Header background image */
 header {
-    position: relative;
     background-image:
-        linear-gradient(
-            rgba(0,0,0,0.35),
-            rgba(0,0,0,0.35)
-        ),
-        url("files/2025/12/header.jpg");
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("files/2025/12/header.jpg") !important;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    min-height: 240px;
 }
 
-/* White text */
 header,
-header a,
-header .text-primary {
+header a {
     color: white !important;
 }
 
-/* Navigation bar */
 .menu-container {
-    background: rgba(0,0,0,0.35);
+    background: rgba(0,0,0,0.25);
 }
 
-/* Navigation links */
 .menu-container a {
     color: white !important;
-}
-
-/* Darker hover */
-.menu-container li:hover {
-    background: rgba(255,255,255,0.15) !important;
 }
