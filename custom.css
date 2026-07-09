@@ -1,22 +1,17 @@
-header {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("files/header.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-
-/* reduce header height */
+/* Image only behind your name */
 header > .container {
-    padding-top: 0.5rem !important;
+    background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url("files/2025/12/header.jpg") center/cover no-repeat;
 }
 
-header .mb-4 {
-    margin-bottom: 0.5rem !important;
+/* Keep the Duke navigation bar */
+.menu-container {
+    background: #056CA1;
 }
 
-/* keep nav compact */
-.menu-container nav {
-    margin-top: 0.5rem !important;
+/* White text on the image */
+header > .container,
+header > .container a {
+    color: white !important;
 }
